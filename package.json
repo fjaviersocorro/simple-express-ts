@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
     "startDev": "NODE_ENV=development webpack",
-    "runDev" :"NODE_ENV=development nodemon build/index.js"
+    "runDev": "NODE_ENV=development nodemon build/index.js",
+    "test":"jest"
   },
   "keywords": [],
   "author": "",
@@ -17,8 +17,12 @@
     "express": "^4.16.4"
   },
   "devDependencies": {
+    "@types/jest": "^24.0.11",
     "@types/node": "^11.11.4",
+    "jest": "^24.5.0",
     "nodemon": "^1.18.10",
+    "supertest": "^4.0.2",
+    "ts-jest": "^24.0.0",
     "ts-loader": "^5.3.3",
     "typescript": "^3.3.4000",
     "webpack": "^4.29.6",
